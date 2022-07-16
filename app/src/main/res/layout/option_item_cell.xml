@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="Testing title"
+        android:id="@+id/option_item_title_id"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_below="@+id/option_item_title_id"
+        android:id="@+id/optionRadioGroup"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_below="@+id/optionRadioGroup"/>
+
+</RelativeLayout>

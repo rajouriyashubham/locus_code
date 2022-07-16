@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="Testing title"
+        android:id="@+id/photo_item_title_id"/>
+
+    <ImageView
+        android:id="@+id/closeImageIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/photo_item_title_id"
+        android:layout_alignRight="@+id/photo_item_iv_id"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:src="@drawable/ic_cross" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/palin_bg"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/closeImageIcon"
+        android:id="@+id/photo_item_iv_id"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_below="@+id/photo_item_iv_id"/>
+</RelativeLayout>
